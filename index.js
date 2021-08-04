@@ -6,6 +6,6 @@ const result = (str) => {
     let fixedWord = word.trim();
     return fixedWord.charAt(0).toUpperCase() + fixedWord.slice(1).toLowerCase();
   });
-  console.log(newArray);
+  console.log(newArray.join().replace(/[^a-zA-Z]/g, ""));
 };
 result(args);
